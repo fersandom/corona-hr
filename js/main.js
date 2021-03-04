@@ -38,7 +38,6 @@ function fetchData() {
       }
       //Put in correct order for display the arrays
       totalCases.reverse();
-      dates.reverse();
       diffArrayChart = [...diffArray];
       diffArrayChart.reverse();
 
