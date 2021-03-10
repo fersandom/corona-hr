@@ -114,7 +114,9 @@ Function `renderCharts` can be splitted into 2 functions since both charts use d
 Why so many `.reverse()` function calls? I there is a need for you to iterate an array in reverse order you can just do this `for (let i = 30; i > 0; i++)`
 
 
+## Notes
 
+I am so slow!
 
 
 

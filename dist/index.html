@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.b61e60ae.css">
+    <title>Corona cases Croatia</title>
+  <script src="/styles.b61e60ae.js"></script></head>
+  <body>
+    <form id="selectionForm">
+      <label for="">select a country</label>
+      <select id="countryList"></select>
+      <label for="">Number of days</label>
+      <input type="number" id="getLength" value="" placeholder="30">
+      <input type="button" id="getData" value="Get Data">
+    </form>
+
+    <canvas id="confirmedCases" width="100%" height="30vh"></canvas>
+
+    <canvas id="dailyIncrease" width="100%" height="30vh"></canvas>
+
+    <div class="table-container">
+      <table id="table" class="hidden">
+        <tr>
+          <th class="table-header">Date</th>
+          <th class="table-header">Total cases</th>
+          <th class="table-header">Daily increase</th>
+        </tr>
+      </table>
+    </div>
+
+    <canvas id="chartIncrease" width="100%" height="40vh"></canvas>
+
+    <footer>
+      <p>
+        Data taken from
+        <a href="https://covid19api.com">https://covid19api.com</a>
+      </p>
+    </footer>
+
+    <script src="/main.fb6bbcaf.js" defer=""></script>
+  </body>
+</html>
