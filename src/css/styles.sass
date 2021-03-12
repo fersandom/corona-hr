@@ -1,6 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
-$main-font: 'Karla', sans-serif;
-    
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap')
+$main-font: 'Karla', sans-serif
+
+$dark-background: #212529
+$dark-font: #DEE2E6
+
 *
     padding: 0
     margin: 0
@@ -13,11 +16,17 @@ button
 
 .title
     text-align: center
-    font-weight: 700
+    margin: 30px
+
+.selection
+    display: flex
+    justify-content: center
+    gap: 30px
 
 .table-container
     display: flex
     justify-content: center
+    margin: 30px
 
 table
     width: 60%
@@ -30,9 +39,7 @@ table
     text-align: center
 
 footer
-    z-index: -10
-    position: fixed
-    bottom: 0
+
     width: 100%
     margin-top: 15px
     text-align: center
@@ -46,3 +53,10 @@ footer
 
 .hidden
     display: none
+
+/*DARK MODE SETTINGS*/
+
+
+.dark
+    background-color: $dark-background
+    color: $dark-font

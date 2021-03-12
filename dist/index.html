@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="/styles.b61e60ae.css">
     <title>Corona cases Croatia</title>
   <script src="/styles.b61e60ae.js"></script></head>
-  <body>
-    <form id="selectionForm">
-      <label for="">select a country</label>
-      <select id="countryList"></select>
-      <label for="">Number of days</label>
-      <input type="number" id="getLength" value="" placeholder="30">
-      <input type="button" id="getData" value="Get Data">
-    </form>
-
+  <body id="body">
+    <h1 class="title">Number of cases and evolution curve of Corona Virus</h1>
+    <div class="selection">
+      <form id="selectionForm" class="form">
+        <label for="">select a country</label>
+        <select id="countryList"></select>
+        <label for="">Number of days</label>
+        <input type="number" id="getLength" value="" placeholder="30">
+        <input type="button" id="getData" value="Get Data">
+      </form>
+      <button class="darkModeButton" id="darkModeButton">Dark mode On/off</button>
+    </div>
     <div class="table-container">
       <table id="table" class="hidden">
         <tr>
-          <th class="table-header">Date</th>
+          <th class="table-header">Last day</th>
           <th class="table-header">Total cases</th>
           <th class="table-header">Daily increase</th>
         </tr>
@@ -27,8 +30,9 @@
     </div>
 
     <canvas id="chartIncrease" width="100%" height="40vh"></canvas>
+    <canvas id="chartTotalCases" width="100%" height="40vh"></canvas>
 
-    <footer>
+    <footer id="footer" class="hidden">
       <p>
         Data taken from
         <a href="https://covid19api.com">https://covid19api.com</a>

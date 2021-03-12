@@ -14,7 +14,17 @@ button {
 
 .title {
   text-align: center;
-  font-weight: 700;
+  margin: 30px;
+}
+
+.selection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
 }
 
 .table-container {
@@ -24,6 +34,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 30px;
 }
 
 table {
@@ -40,9 +51,6 @@ table {
 }
 
 footer {
-  z-index: -10;
-  position: fixed;
-  bottom: 0;
   width: 100%;
   margin-top: 15px;
   text-align: center;
@@ -58,5 +66,11 @@ footer a {
 
 .hidden {
   display: none;
+}
+
+/*DARK MODE SETTINGS*/
+.dark {
+  background-color: #212529;
+  color: #DEE2E6;
 }
 /*# sourceMappingURL=styles.css.map */
